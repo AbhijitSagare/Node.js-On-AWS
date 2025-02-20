@@ -1,2 +1,8 @@
 # Deploy simple node application on aws ec2 instance
-fn
+
+
+This guide explains how to set up a **simple Node.js application**, push it to **GitHub**, and deploy it on **AWS EC2**.
+
+-
+
+
