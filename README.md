@@ -20,20 +20,48 @@ ssh -i your-key.pem ubuntu@your-ec2-public-ip
 ```
 Once connected, run the following command to gain superuser (root) access:
 
+```bash
+sudo su
+```
+
 2️⃣ Install Node.js and npm
 Update the package manager and install Node.js and npm:
 
+```bash
+sudo apt update
+sudo apt install nodejs
+sudo apt install npm
+```
 This installs the latest stable version of Node.js.
 
 Now verify the installation:
 
+
+```bash
+node -v   # Check Node.js version
+npm -v    # Check npm version
+
+```
+
 4️⃣ Clone the Node.js Project from GitHub
 Run the following command to clone the repository:
 
+```bash
+https://github.com/AbhijitSagare/Node.js-On-AWS.git
+```
 Navigate into the project directory
+
+```bash
+cd Node.js-On-AWS
+``` 
 
 5️⃣ Install Dependencies and Start the Application
 Run the following commands:
+
+```bash
+npm install
+node server.js
+```
 
 # Your application is now running on port 4000. 🎉
 
@@ -42,7 +70,9 @@ Run the following commands:
 By default, AWS blocks external access to ports. Follow these steps to allow public access to port 4000:
 
 Open AWS Management Console
+
 Go to EC2 Dashboard → Click on your Instance
+
 Click on the Security Group associated with the instance
 Click Edit Inbound Rules
 Add a new rule:
@@ -55,6 +85,11 @@ Click Save Rules
 Find your EC2 Public IP Address from the AWS console.
 
 Open the browser and enter:
+
+```bash
+http://your-ec2-public-ip:4000/
+```
+
 
 # Your Node.js application is now live on AWS! 🚀
 
