@@ -60,7 +60,7 @@ Run the following commands:
 
 ```bash
 npm install
-node server.js
+node run start
 ```
 
 # Your application is now running on port 4000. 🎉
